@@ -5,11 +5,11 @@ const App = (props) => {
   const [text, setText] = useState("");
   const handleText = (e) => {
     setText(e.target.value);
-    setBl(text.length < 1 ? true : null);
+    setBl(e.target.value.length < 1 ? true : null);
   };
   const [bl, setBl] = useState(true);
 
-  const handleM = (e) => {
+  const handleM = () => {
     if (text.length > 0) {
       console.log(text);
       setText("");
