@@ -26,6 +26,7 @@ const App = (props) => {
             className={`inputText ${bl ? "is-error" : null}`}
             value={text}
             onChange={handleText}
+            onClick={handleText}
           ></input>
           <input
             type="button"
